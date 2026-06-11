@@ -28,5 +28,15 @@ export const projects = [
     githubUrl: "https://github.com/Arwonga/quant-signals",
     liveUrl: "#",
     featured: false,
+  },
+  {
+    id: "corporate-branding",
+    title: "Corporate Brand Identity",
+    description: "High-end corporate newsletters, advertising posters, and cohesive brand identity materials engineered for premium shipping clients.",
+    image: "/laptop.jpg", 
+    technologies: ["Canva", "MJML", "Figma", "Brand Strategy"],
+    githubUrl: "#",
+    liveUrl: "#",
+    featured: true,
   }
 ];

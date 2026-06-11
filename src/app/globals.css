@@ -7,13 +7,6 @@
   --foreground: #F9FAFB; /* Off-white */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #F9FAFB;
-    --foreground: #0A0A0A;
-  }
-}
-
 body {
   color: var(--foreground);
   background-color: var(--background);
@@ -23,7 +16,7 @@ body {
 
 /* Custom Glassmorphism Utilities */
 .glass {
-  background: rgba(17, 24, 39, 0.7); /* Deep Navy with opacity */
+  background: rgba(17, 24, 39, 0.7);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
