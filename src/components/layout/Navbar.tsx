@@ -21,9 +21,9 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent ${
-        scrolled ? 'glass py-4 border-white/10 shadow-lg' : 'bg-transparent py-6'
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${
+      scrolled ? 'bg-premium-black/90 backdrop-blur-md py-4 border-white/10 shadow-lg' : 'border-transparent bg-transparent py-6'
+    }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <a href="#" className="text-2xl font-bold tracking-tighter text-white">
