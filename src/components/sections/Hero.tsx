@@ -92,39 +92,87 @@ const Hero = () => {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="flex-1 hidden lg:flex justify-end mt-12 lg:mt-0"
         >
-          <div className="relative w-80 h-80 xl:w-96 xl:h-96 rounded-full p-2 border border-premium-blue/20 glass shadow-[0_0_40px_rgba(59,130,246,0.15)]">
-            <div className="relative w-full h-full rounded-full overflow-hidden">
-              <Image
-                src="/alex-profile.jpeg"
-                alt="Profile"
-                fill
-                className="object-cover"
-              />
+          {/* Right Column: Image & Orbital Badges */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="flex-1 relative flex justify-center items-center mt-12 lg:mt-0"
+          >
+            <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border border-white/10 glass p-2">
+              {/* Profile Image Container */}
+              <div className="w-full h-full rounded-full overflow-hidden relative bg-premium-navy">
+                <img
+                  src="/image_2b161c.jpg" 
+                  alt="Alex Profile"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* 1. Top Left (Existing) */}
+              <motion.div
+                animate={{ y: [-5, 5, -5] }}
+                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+                className="absolute top-6 -left-6 md:top-10 md:-left-10 glass px-4 py-2 rounded-full text-sm font-medium text-white border border-white/10 shadow-lg z-10 whitespace-nowrap"
+              >
+                Next.js 15
+              </motion.div>
+
+              {/* 2. Top Right (NEW) */}
+              <motion.div
+                animate={{ y: [4, -4, 4] }}
+                transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+                className="absolute top-4 -right-4 md:top-8 md:-right-8 glass px-4 py-2 rounded-full text-sm font-medium text-white border border-white/10 shadow-lg z-10 whitespace-nowrap"
+              >
+                TypeScript
+              </motion.div>
+
+              {/* 3. Middle Left (NEW) */}
+              <motion.div
+                animate={{ y: [-3, 3, -3] }}
+                transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut" }}
+                className="absolute top-1/2 -translate-y-1/2 -left-12 md:-left-16 glass px-4 py-2 rounded-full text-sm font-medium text-white border border-white/10 shadow-lg z-10 whitespace-nowrap"
+              >
+                Python
+              </motion.div>
+
+              {/* 4. Middle Right (NEW) */}
+              <motion.div
+                animate={{ y: [5, -5, 5] }}
+                transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut" }}
+                className="absolute top-1/2 -translate-y-1/2 -right-10 md:-right-14 glass px-4 py-2 rounded-full text-sm font-medium text-white border border-white/10 shadow-lg z-10 whitespace-nowrap"
+              >
+                React
+              </motion.div>
+
+              {/* 5. Bottom Left (Existing) */}
+              <motion.div
+                animate={{ y: [-4, 4, -4] }}
+                transition={{ repeat: Infinity, duration: 5.5, ease: "easeInOut" }}
+                className="absolute bottom-12 -left-4 md:bottom-16 md:-left-6 glass px-4 py-2 rounded-full text-sm font-medium text-white border border-white/10 shadow-lg z-10 whitespace-nowrap"
+              >
+                Quant Research
+              </motion.div>
+
+              {/* 6. Bottom Right (Existing) */}
+              <motion.div
+                animate={{ y: [3, -3, 3] }}
+                transition={{ repeat: Infinity, duration: 4.2, ease: "easeInOut" }}
+                className="absolute bottom-16 -right-6 md:bottom-20 md:-right-8 glass px-4 py-2 rounded-full text-sm font-medium text-white border border-white/10 shadow-lg z-10 whitespace-nowrap"
+              >
+                Spring Boot
+              </motion.div>
+
+              {/* 7. Bottom Center (NEW) */}
+              <motion.div
+                animate={{ y: [-5, 5, -5] }}
+                transition={{ repeat: Infinity, duration: 4.8, ease: "easeInOut" }}
+                className="absolute -bottom-4 left-1/2 -translate-x-1/2 glass px-4 py-2 rounded-full text-sm font-medium text-white border border-white/10 shadow-lg z-10 whitespace-nowrap"
+              >
+                Laravel
+              </motion.div>
             </div>
-            
-            {/* Floating Tech Badges */}
-            <motion.div 
-              animate={{ y: [0, -12, 0] }}
-              transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="absolute top-4 -left-6 glass px-4 py-2 rounded-xl text-sm font-semibold text-white shadow-lg border-white/10"
-            >
-              Next.js 15
-            </motion.div>
-            <motion.div 
-              animate={{ y: [0, 12, 0] }}
-              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-              className="absolute bottom-16 -right-8 glass px-4 py-2 rounded-xl text-sm font-semibold text-white shadow-lg border-white/10"
-            >
-              Spring Boot
-            </motion.div>
-            <motion.div 
-              animate={{ y: [0, -8, 0] }}
-              transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut", delay: 0.5 }}
-              className="absolute -bottom-4 left-16 glass px-4 py-2 rounded-xl text-sm font-semibold text-white shadow-lg border-white/10"
-            >
-              Quant Research
-            </motion.div>
-          </div>
+          </motion.div>
         </motion.div>
 
       </div>
