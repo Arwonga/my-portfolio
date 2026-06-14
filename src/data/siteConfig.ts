@@ -10,6 +10,6 @@ export const siteConfig = {
   email: "alexjamesarwonga@gmail.com",
   socials: {
     github: "https://github.com/Arwonga",
-    linkedin: "https://linkedin.com/in/yourprofile",
+    linkedin: "https://linkedin.com/in/alex-arwonga",
   }
 };
