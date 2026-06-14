@@ -31,10 +31,10 @@ const About = () => {
               <span className="text-premium-gray">Designing experiences.</span>
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed">
-              I am a hybrid technologist specializing in full-stack system architecture and quantitative research. From architecting scalable property management backends in Spring Boot and Laravel, to building high-probability predictive models for financial signals, I thrive at the intersection of data and design.
+              I am a hybrid software engineer specializing in system architecture, graphic design, and quantitative research. From engineering robust SaaS backends in Laravel, to crafting premium product identities and high-probability models, I thrive at the intersection of code and creativity.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed">
-              My philosophy is simple: write clean code, build intuitive Apple-inspired interfaces, and deliver systems that solve real-world problems with mathematical precision.
+              My philosophy is simple: write clean logic, design intuitive user interfaces, and deliver complete digital products that solve real-world problems with absolute aesthetic and technical precision.
             </p>
           </div>
 

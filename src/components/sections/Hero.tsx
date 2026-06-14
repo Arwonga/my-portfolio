@@ -69,7 +69,7 @@ const Hero = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed"
             >
-              Based in {siteConfig.location}, I engineer high-performance systems, build intelligent AI solutions, and craft Apple-inspired interfaces that convert.
+              Based in {siteConfig.location}, I architect robust backend systems, integrate seamless APIs, and craft premium, user-centric digital experiences.
             </motion.p>
 
             <motion.div 
@@ -78,9 +78,15 @@ const Hero = () => {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="flex flex-wrap gap-4"
             >
-              <Button variant="primary" size="lg">View Projects</Button>
-              <Button variant="glass" size="lg">Contact Me</Button>
-              <Button variant="outline" size="lg">Download CV</Button>
+              <a href="#projects" className="inline-block">
+            <Button variant="primary" size="lg">View Projects</Button>
+          </a>
+          <a href="#contact" className="inline-block">
+            <Button variant="glass" size="lg">Contact Me</Button>
+          </a>
+          <a href="/alex-cv.pdf" target="_blank" rel="noopener noreferrer" className="inline-block">
+            <Button variant="outline" size="lg">Download CV</Button>
+          </a>
             </motion.div>
           </motion.div>
         </div>
@@ -115,7 +121,7 @@ const Hero = () => {
                 transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
                 className="absolute top-6 -left-6 md:top-10 md:-left-10 glass px-4 py-2 rounded-full text-sm font-medium text-white border border-white/10 shadow-lg z-10 whitespace-nowrap"
               >
-                Next.js 15
+                Next.js 15 & TypeScript
               </motion.div>
 
               {/* 2. Top Right (NEW) */}
@@ -124,7 +130,7 @@ const Hero = () => {
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
                 className="absolute top-4 -right-4 md:top-8 md:-right-8 glass px-4 py-2 rounded-full text-sm font-medium text-white border border-white/10 shadow-lg z-10 whitespace-nowrap"
               >
-                TypeScript
+                Canva & Figma
               </motion.div>
 
               {/* 3. Middle Left (NEW) */}
@@ -133,7 +139,7 @@ const Hero = () => {
                 transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut" }}
                 className="absolute top-1/2 -translate-y-1/2 -left-12 md:-left-16 glass px-4 py-2 rounded-full text-sm font-medium text-white border border-white/10 shadow-lg z-10 whitespace-nowrap"
               >
-                Python
+                Flutter & MJML
               </motion.div>
 
               {/* 4. Middle Right (NEW) */}
@@ -142,7 +148,7 @@ const Hero = () => {
                 transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut" }}
                 className="absolute top-1/2 -translate-y-1/2 -right-10 md:-right-14 glass px-4 py-2 rounded-full text-sm font-medium text-white border border-white/10 shadow-lg z-10 whitespace-nowrap"
               >
-                React
+                React & Tailwind CSS
               </motion.div>
 
               {/* 5. Bottom Left (Existing) */}
@@ -169,7 +175,7 @@ const Hero = () => {
                 transition={{ repeat: Infinity, duration: 4.8, ease: "easeInOut" }}
                 className="absolute -bottom-4 left-1/2 -translate-x-1/2 glass px-4 py-2 rounded-full text-sm font-medium text-white border border-white/10 shadow-lg z-10 whitespace-nowrap"
               >
-                Laravel
+                Laravel PHP
               </motion.div>
             </div>
           </motion.div>
