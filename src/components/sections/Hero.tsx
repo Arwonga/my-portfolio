@@ -109,7 +109,7 @@ const Hero = () => {
               {/* Profile Image Container */}
               <div className="w-full h-full rounded-full overflow-hidden relative bg-premium-navy">
                 <img
-                  src="/image_2b161c.jpg" 
+                  src="/alex-profile.jpeg" 
                   alt="Alex Profile"
                   className="w-full h-full object-cover"
                 />
