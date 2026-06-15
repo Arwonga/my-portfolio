@@ -84,8 +84,12 @@ const Hero = () => {
           <a href="#contact" className="inline-block">
             <Button variant="glass" size="lg">Contact Me</Button>
           </a>
-          <a href="/alex-cv.pdf" target="_blank" rel="noopener noreferrer" className="inline-block">
-            <Button variant="outline" size="lg">Download CV</Button>
+          <a
+              href="/alex_cv.pdf" 
+              download="Alex_Arwonga_CV.pdf" 
+              className="px-6 py-3 bg-premium-blue text-white rounded-lg font-medium hover:bg-blue-600 transition-colors inline-flex items-center gap-2 shadow-lg shadow-blue-500/20"
+          >
+               Download CV
           </a>
             </motion.div>
           </motion.div>
@@ -99,17 +103,20 @@ const Hero = () => {
           className="flex-1 hidden lg:flex justify-end mt-12 lg:mt-0"
         >
           {/* Right Column: Image & Orbital Badges */}
+          {/* Right Column: Image & Orbital Badges */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="flex-1 relative flex justify-center items-center mt-12 lg:mt-0"
+            className="flex-1 relative flex justify-center items-center mt-20 lg:mt-0 w-full"
           >
-            <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border border-white/10 glass p-2">
+          
+            <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border border-white/10 glass p-2 scale-[0.65] md:scale-100 origin-center">
+              
               {/* Profile Image Container */}
               <div className="w-full h-full rounded-full overflow-hidden relative bg-premium-navy">
                 <img
-                  src="/alex-profile.jpeg" 
+                  src="/alex-profile.jpg" 
                   alt="Alex Profile"
                   className="w-full h-full object-cover"
                 />
